@@ -10,7 +10,8 @@
     },
     "baseUrl": ".",
     "typeRoots": ["./node_modules/@types/"],
-    "watch": true
+    "watch": true,
+    "esModuleInterop": true
   },
   "include": ["./src/**/*"],
   "exclude": ["./src/**/*.spec.ts"]
