@@ -6,17 +6,12 @@
     "module": "commonjs",
     "target": "esnext",
     "paths": {
-      "@models/*": [
-        "models/*"
-      ]
+      "@models/*": ["models/*"]
     },
     "baseUrl": "./src/",
-    "typeRoots": [
-      "./node_modules/@types/",
-    ],
-    "watch": true,
+    "typeRoots": ["./node_modules/@types/"],
+    "watch": true
   },
-  "include": [
-    "./src/**/*"
-  ]
+  "include": ["./src/**/*"],
+  "exclude": ["./src/**/*.spec.ts"]
 }
