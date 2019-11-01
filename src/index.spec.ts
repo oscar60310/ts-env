@@ -1,3 +1,3 @@
-it("Jest should work", () => {
-  expect(true).toBeTruthy();
-});
+it('Jest should work', () => {
+  expect(true).toBeTruthy()
+})
