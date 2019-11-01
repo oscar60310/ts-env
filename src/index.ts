@@ -1,2 +1,2 @@
-import chalk from 'chalk';
+import chalk from "chalk";
 console.log(chalk`{green ts env work}`);
