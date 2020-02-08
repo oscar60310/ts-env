@@ -2,14 +2,18 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "launch",
+      "name": "Node Inspector",
       "type": "node",
       "request": "launch",
-      "program": "${workspaceRoot}/dist/index.js",
-      "args": [],
+      "args": ["${workspaceRoot}/src/index.ts"],
+      "runtimeArgs": ["-r", "ts-node/register"],
       "cwd": "${workspaceRoot}",
       "protocol": "inspector",
-      "env": {}
+      "internalConsoleOptions": "openOnSessionStart",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "outputCapture": "std"
     }
   ]
 }
