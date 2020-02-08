@@ -14,14 +14,15 @@
     "eslint-plugin-prettier": "^3.1.1",
     "jest": "^24.9.0",
     "prettier": "^1.18.2",
-    "ts-jest": "^24.1.0"
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.6.2"
   },
   "dependencies": {
     "chalk": "^2.4.2",
     "typescript": "^3.6.4"
   },
   "scripts": {
-    "start": "./node_modules/.bin/tsc",
+    "start": "ts-node src/index.ts",
     "lint": "eslint src --ext .ts",
     "test": "jest",
     "clean": "rimraf ./dist && mkdir dist",
